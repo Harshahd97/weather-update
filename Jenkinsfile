@@ -22,7 +22,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh 'ssh root@172.31.28.191'
-                sh 'scp /home/slave2/workspace/parcel_service_pipeline/target/simple-parcel-service-app-1.0-SNAPSHOT.jar root@172.31.28.191:/opt/apache-tomcat-8.5.98/webapps'
+                sh 'scp /home/slave2/workspace/weather-update_Develop/target/weather-forecast-app-1.0-SNAPSHOT.jar root@172.31.28.191:/opt/apache-tomcat-8.5.98/webapps'
         }
         }
     } 
